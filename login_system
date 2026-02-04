@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char m_id[50] = "browser45@gmail.com";
+    char pass[20] = "browser54";
+    char ck_m_id[50];
+    char ck_pass[50];
+
+    for (int i = 1; i <= 3; i++) {
+        printf("Enter mail id : ");
+        scanf("%s", ck_m_id);
+
+        printf("Enter password : ");
+        scanf("%s", ck_pass);
+
+        if (strcmp(m_id, ck_m_id) == 0 && strcmp(pass, ck_pass) == 0) {
+            printf("Successfully logged in\n");
+            break;
+        }
+    }
+
+    return 0;
+}
